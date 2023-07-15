@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="main">
+        <div class="button-row">
+        <div><a href="index.html" title="HOME"></a></div>
+        <div><a href="products.html" title="PRODUCTS"></a></div>
+        <div><a href="WISHLIST" title="WISHLIST"></a></div>
+        <div><a href="CONTACT" title="CONTACT"></a></div>
+    </div>
+</div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h2>Productos destacados</h2>
+    </section>
+    <section class="product-list">
+      <div class="product">
+        <img src="social/jordan1.jpeg" alt="Jordan1">
+        <h3>Jordan</h3>
+        <p>Description.</p>
+        <button onclick="addToCart('Jordan retro 1', 85000)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="social/offwhite.jpeg" alt="offwhite">
+        <h3>Offwhite</h3>
+        <p>Description</p>
+        <button class="shop-car">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="social/balenciaga.jpeg" alt="balenciaga">
+        <h3>Balenciaga</h3>
+        <p>Description</p>
+        <button class="shop-car">Add to Cart</button>
+      </div>
+      </div>
+
+
+      <div class="cart">
+        <h2>Shopping cart</h2>
+        <ul id="cart-list"></ul>
+        <p id="total">Total: $0</p>
+        <button onclick="emptyCart()">Empty cart</button>
+        <button onclick="genTicket()">Go to pay</button>
+      </div>
+
+    </section>
+    <section class="about-us">
+      <br>
+      <br>
+      <br>
+      <br>  
+      <h2>About us</h2>
+      <p>Descrition.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="wrapper">
+     <div class="navbar">
+      <div class="navbar_item -green">
+        <span class="navbar_icon">
+          <i class="fab fa-whatsapp"></i>
+        </span>
+      </div>
+      <div class="navbar_item -black">
+        <span class="navbar_icon">
+          <i class="fab fa-tiktok"></i>
+        </span>
+      </div>
+      <div class="navbar_item -purple">
+        <span class="navbar_icon">
+          <i class="fab fa-instagram"></i>
+        </span>
+      </div>
+    </div>
+</div>
+  </footer>
+  <script src="functions.js"></script>
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
